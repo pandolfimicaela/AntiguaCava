@@ -1,0 +1,119 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+.encabezado {
+    width: 100%;
+    padding: 350px;
+    background-image: url(Imagenes/PRUEBA.jpeg)
+}
+
+.menu {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.menu li {
+    list-style: none;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: underline;
+    font-family:"Cooper Black";
+    font: bold 16px;
+}
+
+.cuerpo-pagina-principal {
+    width: 850px;
+    float: left;
+    text-align: justify;
+    margin: 55px;
+}
+
+table {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.columna {
+    width: 300px;
+    float: right;
+    margin: 40px;
+}
+  
+.columna blockquote {
+    border: 2px solid black;
+    padding: 40px;
+    background-color: white;
+    margin-bottom: 40px;
+    font-family:"Cooper Black";
+    font-size: medium;
+    text-align: justify;
+    border-radius: 20px;
+}
+
+.piedepagina {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family:"Cooper Black";
+    text-align: center;
+}
+
+.enlaces li {
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px 5px;
+    display: inline-block;
+    color: black;
+    font-size: 50px;
+}
+
+footer {
+    text-align: center;
+}
+
+.pestañas {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family:"Cooper Black";
+    font: bold 20px;
+    padding: 25px;
+}
+
+.contenido-pestaña {
+    text-align: center;
+    margin: 55px;
+}
+
+.lista-productos li {
+    line-height: 4;
+    list-style: none;
+    text-align: justify;
+    margin-left: 200px;
+}
+
+.formulario{
+    width: 950px;
+    height: 750px;
+    margin: 70px auto;
+    display: flex;
+    overflow:hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 50px black;
+}
