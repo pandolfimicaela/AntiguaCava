@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <div class="formulario">
+             <div class="info_contacto">
+                 <section class="imagen_contacto">
+                       <i class="bi bi-person-circle"></i>
+                       <br>
+                       <img src="Imagenes/Logo.png" width="300" height="160">
+                </section>
+                <div class="enlaces-form">
+                  <ul>
+                      <li><a href="https://www.facebook.com/AntiguaCavaTiendaDeVinos" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                      <li><a href="https://wa.me/543364289327" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                      <li><a href="https://instagram.com/antiguacavasn?igshid=YmMyMTA2M2Y=" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                  </ul>
+                </div>
+             </div>
+      
+     <div class="contact_form">
+        <div class="formulario_contacto">
+                <h1> CONTACTO </h1>
+                <br>
+             <form action=" " class="form-inline" method="post">
+                  <p>
+                     <label for="nombre" class ="colocar_nombre">NOMBRE Y APELLIDO<span class ="obligatorio">*</span></label>
+                     <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="">
+                  </p>
+                  
+                  <p>
+                     <label for ="email" class ="colocar_email"> E-MAIL<span class="obligatorio">*</span></label>
+                     <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="">
+                  </p>
+
+                  <p>
+                     <label for="telefone" class="colocar_telefono">TELEFONO CELULAR<span class="obligatorio">*</span></label>
+                     <input type="tel" name="introducir_telefono" id="telefono" placeholder="Ingresar el número sin el 0 y sin el 15">
+                  </p>
+
+                  <p>
+                     <label for="asunto" class="colocar_asunto">ASUNTO</label>
+                     <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Presupuesto, Proveedor, Consulta de Precios, etc">
+                  </p>
+
+                  <p>
+                     <label for="mensaje" class="colocar_mensaje">MENSAJE<span class="obligatorio">*</span></label>
+                     <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Escribe tu consulta o comentario aquí. Gracias!"></textarea>
+                  </p>
+
+                  <button type="submit" onclick="pregunta()" value="Enviar"><p>Enviar</p></button>
+
+                  <script language="JavaScript">
+                     function pregunta(){
+                         if (confirm('¿Esta seguro que los datos son correctos?')){
+                            document.tuformulario.submit()
+                         }
+                     }
+                     </script>
+
+               </form>
+          </div>
+      </div>
+      </div>
+      
+      <div class="volver-inicio">
+         <a href="index.html"><i class="bi bi-arrow-left-circle-fill">    INICIO</a></i>
+     </div>
+
+     <br>
+     
+     <br>
+
+</body>
+
+</html>

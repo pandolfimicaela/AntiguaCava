@@ -18,7 +18,8 @@ box-sizing: border-box;
 .encabezado {
     width: 100%;
     padding: 350px;
-    background-image: url(Imagenes/PRUEBA.jpeg)
+    background-image: url(Imagenes/PRUEBA.jpeg);
+    background-position: center;
 }
 
 .menu {
@@ -38,6 +39,8 @@ box-sizing: border-box;
 
 .cuerpo-pagina-principal {
     width: 850px;
+    height: auto;
+    padding: auto;
     float: left;
     text-align: justify;
     margin: 55px;
@@ -50,6 +53,7 @@ table {
 
 .columna {
     width: 300px;
+    height: 1700px;
     float: right;
     margin: 40px;
 }
@@ -65,21 +69,29 @@ table {
     border-radius: 20px;
 }
 
+.pdf a {
+    text-decoration: none;
+    color: rgb(151, 22, 22);
+    text-align: justify;
+}
+
 .piedepagina {
-    padding: 20px;
+    padding: 30px;
     background-color: black;
     color: white;
     font-family:"Cooper Black";
-    text-align: center;
 }
 
 .enlaces li {
-    text-align: center;
-    margin: 0 5px;
     padding: 5px 5px;
-    display: inline-block;
+    display: inline-block; 
     color: black;
-    font-size: 50px;
+    font-size: 50px;;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: rgb(151, 22, 22);
 }
 
 footer {
@@ -95,6 +107,11 @@ footer {
     padding: 25px;
 }
 
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
 .contenido-pestaña {
     text-align: center;
     margin: 55px;
@@ -107,13 +124,139 @@ footer {
     margin-left: 200px;
 }
 
+.volver-inicio {
+    text-align: right;
+    margin-right: 60px;
+    color: black;
+    font-family:"Cooper Black";
+    font-size: 30px;
+    padding: 20px;
+}
+
+.volver-inicio a {
+    text-decoration: none;
+    color: black;
+    text-decoration-line: underline;
+}
+
 .formulario{
-    width: 950px;
+    width: 1300px;
     height: 750px;
     margin: 70px auto;
     display: flex;
     overflow:hidden;
     border-radius: 10px;
     background-color: white;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 50px rgb(151, 22, 22);
+}
+
+.info_contacto{
+    width: 30%;
+    position: relative;
+    display:inline-flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(151, 22, 22) ;
+}
+
+.imagen_contacto i{
+    font-size: 180px;
+    color: white;
+} 
+
+.enlaces-form li {
+    padding: 5px 5px;
+    display: inline; 
+    color: black;
+    font-size: 50px;
+    bottom: 0px;
+}
+
+.enlaces-form a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact_form {
+    width: 70%;
+    height: auto;
+    margin: 30px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    float: 20px right ;
+    text-align: center;
+  }
+
+.contact_form h1{
+    font-family:"Cooper Black";
+    font-size: 40px;
+    color: black;
+}
+
+input {
+    background-color: rgb(53, 52, 52);
+    width: 600px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(78, 76, 77);
+    margin-bottom: 20px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 2px;
+}
+  
+textarea {
+    background-color: #fbfbfb;
+    width: 600px;
+    height: 100px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(78, 76, 77) ;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+  
+label{
+    display:flex;
+    font-size: 20px;   
+    font-family:"Cooper Black";
+    margin-bottom: 15px;
+}
+    
+button{
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor:pointer;
+}
+    
+button p{
+    color: white;
+    font-family:"Cooper Black";
+    font-size: 20px;   
+}
+
+::placeholder {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    text-align: center;
+}
+
+.texto_mensaje::-webkit-input-placeholder { 
+    color:black; 
 }
